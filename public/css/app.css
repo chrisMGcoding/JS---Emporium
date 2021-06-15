@@ -6536,5 +6536,210 @@ body {
     background-size: cover;
   }
 }
+@media (min-width: 1024px) {
+  .recentProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .recentProduct .productTitle {
+    font-size: 2rem;
+  }
+  .recentProduct .productDescription {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .recentProduct .productDescription .productImagePrice {
+    width: 30%;
+  }
+  .recentProduct .productDescription .productImagePrice .productImage {
+    padding: 1rem;
+  }
+  .recentProduct .productDescription .productImagePrice .productImage .photoProduit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice {
+    text-align: center;
+    line-height: 1rem;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice .productText {
+    font-weight: bold;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice .productText .barre {
+    color: #6C757D;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice .productText .red {
+    color: #DD4545;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice1 {
+    text-align: center;
+    line-height: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice1 .productPriceSale {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #DD4545;
+    padding: 1rem;
+    width: 20%;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice1 .productPriceSale > p {
+    color: white;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice1 .productPriceText {
+    font-weight: bold;
+    width: 50%;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice1 .productPriceText .barre {
+    color: #6C757D;
+    text-decoration: line-through;
+    padding: 0.5rem;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice1 .productPriceText .red {
+    color: #DD4545;
+  }
+}
+@media (min-width: 700px) and (max-width: 1023px) {
+  .recentProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .recentProduct .productTitle {
+    font-size: 2rem;
+  }
+  .recentProduct .productDescription {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .recentProduct .productDescription .productImagePrice {
+    width: 30%;
+  }
+  .recentProduct .productDescription .productImagePrice .productImage {
+    padding: 1rem;
+  }
+  .recentProduct .productDescription .productImagePrice .productImage .photoProduit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice {
+    text-align: center;
+    line-height: 1rem;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice .productText {
+    font-weight: bold;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice .productText .barre {
+    color: #6C757D;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice .productText .red {
+    color: #DD4545;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice1 {
+    text-align: center;
+    line-height: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice1 .productPriceSale {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #DD4545;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice1 .productPriceSale > p {
+    color: white;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice1 .productPriceText {
+    font-weight: bold;
+    width: 50%;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice1 .productPriceText .barre {
+    color: #6C757D;
+    text-decoration: line-through;
+    padding: 0.5rem;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice1 .productPriceText .red {
+    color: #DD4545;
+  }
+}
+@media (max-width: 699px) {
+  .recentProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .recentProduct .productTitle {
+    font-size: 2rem;
+  }
+  .recentProduct .productDescription {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .recentProduct .productDescription .productImagePrice {
+    width: 30%;
+  }
+  .recentProduct .productDescription .productImagePrice .productImage {
+    padding: 1rem;
+  }
+  .recentProduct .productDescription .productImagePrice .productImage .photoProduit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice {
+    text-align: center;
+    line-height: 1rem;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice .productText {
+    font-weight: bold;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice .productText .barre {
+    color: #6C757D;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice .productText .red {
+    color: #DD4545;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice1 {
+    text-align: center;
+    line-height: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice1 .productPriceSale {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #DD4545;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice1 .productPriceSale > p {
+    color: white;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice1 .productPriceText {
+    font-weight: bold;
+    width: 50%;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice1 .productPriceText .barre {
+    color: #6C757D;
+    text-decoration: line-through;
+    padding: 0.5rem;
+  }
+  .recentProduct .productDescription .productImagePrice .productPrice1 .productPriceText .red {
+    color: #DD4545;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */

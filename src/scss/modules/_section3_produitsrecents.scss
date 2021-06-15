@@ -1,0 +1,207 @@
+@media (min-width: 1024px) {
+    .recentProduct {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .productTitle {
+            font-size: 2rem;
+        }
+        .productDescription {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            .productImagePrice {
+                width: 30%;
+                .productImage {
+                    padding: 1rem;
+                    .photoProduit {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .productPrice {
+                    text-align: center;
+                    line-height: 1rem;
+                    .productText {
+                        font-weight: bold;
+                        .barre {
+                            color: $connexion;
+                        }
+                        .red {
+                            color: $bouton;
+                        }
+                    }
+                }
+                .productPrice1 {
+                    text-align: center;
+                    line-height: 1rem;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    .productPriceSale {
+                        display: flex;
+                        align-items: center;
+                        border-radius: 50px;
+                        background-color: $bouton;
+                        padding: 1rem;
+                        width: 20%;
+                    }
+                    .productPriceSale>p {
+                        color: white;
+                    }
+                    .productPriceText {
+                        font-weight: bold;
+                        width: 50%;
+                        .barre {
+                            color: $connexion;
+                            text-decoration: line-through;
+                            padding: 0.5rem;
+                        }
+                        .red {
+                            color: $bouton;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1023px) {
+    .recentProduct {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .productTitle {
+            font-size: 2rem;
+        }
+        .productDescription {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            .productImagePrice {
+                width: 30%;
+                .productImage {
+                    padding: 1rem;
+                    .photoProduit {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .productPrice {
+                    text-align: center;
+                    line-height: 1rem;
+                    .productText {
+                        font-weight: bold;
+                        .barre {
+                            color: $connexion;
+                        }
+                        .red {
+                            color: $bouton;
+                        }
+                    }
+                }
+                .productPrice1 {
+                    text-align: center;
+                    line-height: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    .productPriceSale {
+                        display: flex;
+                        align-items: center;
+                        border-radius: 50px;
+                        background-color: $bouton;
+                    }
+                    .productPriceSale>p {
+                        color: white;
+                    }
+                    .productPriceText {
+                        font-weight: bold;
+                        width: 50%;
+                        .barre {
+                            color: $connexion;
+                            text-decoration: line-through;
+                            padding: 0.5rem;
+                        }
+                        .red {
+                            color: $bouton;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 699px) {
+    .recentProduct {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .productTitle {
+            font-size: 2rem;
+        }
+        .productDescription {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            .productImagePrice {
+                width: 30%;
+                .productImage {
+                    padding: 1rem;
+                    .photoProduit {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .productPrice {
+                    text-align: center;
+                    line-height: 1rem;
+                    .productText {
+                        font-weight: bold;
+                        .barre {
+                            color: $connexion;
+                        }
+                        .red {
+                            color: $bouton;
+                        }
+                    }
+                }
+                .productPrice1 {
+                    text-align: center;
+                    line-height: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    .productPriceSale {
+                        display: flex;
+                        align-items: center;
+                        border-radius: 50px;
+                        background-color: $bouton;
+                    }
+                    .productPriceSale>p {
+                        color: white;
+                    }
+                    .productPriceText {
+                        font-weight: bold;
+                        width: 50%;
+                        .barre {
+                            color: $connexion;
+                            text-decoration: line-through;
+                            padding: 0.5rem;
+                        }
+                        .red {
+                            color: $bouton;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
