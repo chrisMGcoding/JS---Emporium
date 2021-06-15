@@ -6541,6 +6541,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 1rem;
   }
   .recentProduct .productTitle {
     font-size: 2rem;
@@ -6610,6 +6611,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 1rem;
   }
   .recentProduct .productTitle {
     font-size: 2rem;
@@ -6678,6 +6680,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 1rem;
   }
   .recentProduct .productTitle {
     font-size: 2rem;
@@ -6740,6 +6743,105 @@ body {
   .recentProduct .productDescription .productImagePrice .productPrice1 .productPriceText .red {
     color: #DD4545;
   }
+}
+@media (min-width: 1024px) {
+  .discover {
+    height: 42rem;
+    background-image: url("../../../public/images/cta-bg.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+
+  .discover > h1 {
+    color: white;
+    font-size: 5rem;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .discover > button {
+    background-color: #DD4545;
+    border-radius: 10px;
+    border: none;
+    padding: 1rem;
+  }
+
+  .discover > button > a {
+    text-decoration: none;
+    color: white;
+  }
+}
+@media (min-width: 700px) and (max-width: 1023px) {
+  .discover {
+    height: 42rem;
+    background-image: url("../../../public/images/cta-bg.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+
+  .discover > h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .discover > button {
+    background-color: #DD4545;
+    border-radius: 10px;
+    border: none;
+    padding: 1rem;
+  }
+
+  .discover > button > a {
+    text-decoration: none;
+    color: white;
+  }
+}
+@media (max-width: 699px) {
+  .discover {
+    height: 42rem;
+    background-image: url("../../../public/images/cta-bg.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+
+  .discover > h1 {
+    color: white;
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .discover > button {
+    background-color: #DD4545;
+    border-radius: 10px;
+    border: none;
+    padding: 1rem;
+  }
+
+  .discover > button > a {
+    text-decoration: none;
+    color: white;
+  }
+}
+.carroussel {
+  height: 400px;
 }
 
 /*# sourceMappingURL=app.css.map */
