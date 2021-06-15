@@ -1,7 +1,185 @@
-.test {
-    background-color: red;
+@media (min-width : 1024px) {
+    header {
+        width: 100%;
+        height: 12rem;
+        position: fixed;
+        h1 {
+            display: flex;
+            justify-content: center;
+            padding-top: 1rem;
+            font-family: 'Baloo Tammudu 2', cursive;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0rem;
+            padding: 0rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li {
+                margin: 2rem;
+                display: flex;
+                    align-items: center;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    cursor: pointer;
+                    font-family: 'Baloo Tammudu 2', cursive;
+                }
+            }
+            div {
+                width: 1.5rem;
+                height: 1.5rem;
+                cursor: pointer;
+                
+            }
+            div:first-of-type {
+                margin-left: 2rem;
+                margin-right: 0.5rem;
+                border-radius: 5px;
+                border: 1px solid black;
+                cursor: pointer;
+            }
+            div:nth-of-type(2) {
+                background-color: black;
+                color: black;
+                margin-right: 1rem;
+                border-radius: 5px;
+                border: 1px solid black;
+                cursor: pointer;
+            }
+            button {
+                height: 2rem;
+                color: white;
+                background-color: $connexion;
+                cursor: pointer;
+                font-family: 'Baloo Tammudu 2', cursive;
+            }
+        }
+    }
 }
 
-.test1 {
-    background-color: red;
+@media (max-width: 1023px) and (min-width : 600px) {
+    header {
+        width: 100%;
+        height: 12rem;
+        position: sticky;
+        h1 {
+            display: flex;
+            justify-content: center;
+            padding-top: 1rem;
+            font-family: 'Baloo Tammudu 2', cursive;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0rem;
+            padding: 0rem;
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                margin: 2rem;
+                display: flex;
+                align-items: center;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    cursor: pointer;
+                    font-family: 'Baloo Tammudu 2', cursive;
+                }
+            }
+            div {
+                width: 1.5rem;
+                height: 1.5rem;
+                cursor: pointer;
+                margin-top: 1.5rem;
+                
+            }
+            div:first-of-type {
+                margin-left: 2rem;
+                margin-right: 0.5rem;
+                border-radius: 5px;
+                border: 1px solid black;
+                cursor: pointer;
+            }
+            div:nth-of-type(2) {
+                background-color: black;
+                color: black;
+                margin-right: 1rem;
+                border-radius: 5px;
+                border: 1px solid black;
+                cursor: pointer;
+            }
+            button {
+                height: 2rem;
+                color: white;
+                background-color: $connexion;
+                cursor: pointer;
+                font-family: 'Baloo Tammudu 2', cursive;
+                margin-top: 1.5rem;
+            }
+        }
+    }
 }
+
+@media (max-width: 599px) {
+    header {
+        width: 100%;
+        height: 12rem;
+        position: sticky;
+        h1 {
+            display: flex;
+            justify-content: center;
+            padding-top: 1rem;
+            font-family: 'Baloo Tammudu 2', cursive;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0rem;
+            padding: 0rem;
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                margin: 2rem;
+                display: flex;
+                align-items: center;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    cursor: pointer;
+                    font-family: 'Baloo Tammudu 2', cursive;
+                }
+            }
+            div {
+                width: 1.5rem;
+                height: 1.5rem;
+                cursor: pointer;
+                margin-top: 1.5rem;
+                
+            }
+            div:first-of-type {
+                margin-left: 2rem;
+                margin-right: 0.5rem;
+                border-radius: 5px;
+                border: 1px solid black;
+                cursor: pointer;
+            }
+            div:nth-of-type(2) {
+                background-color: black;
+                color: black;
+                margin-right: 1rem;
+                border-radius: 5px;
+                border: 1px solid black;
+                cursor: pointer;
+            }
+            button {
+                height: 2rem;
+                color: white;
+                background-color: $connexion;
+                cursor: pointer;
+                font-family: 'Baloo Tammudu 2', cursive;
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}
+

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap");
 /*!
  * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6117,12 +6118,189 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-.test {
-  background-color: red;
+@media (min-width: 1024px) {
+  header {
+    width: 100%;
+    height: 12rem;
+    position: fixed;
+  }
+  header h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    font-family: "Baloo Tammudu 2", cursive;
+  }
+  header ul {
+    list-style-type: none;
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header ul li {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  header ul li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-family: "Baloo Tammudu 2", cursive;
+  }
+  header ul div {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+  }
+  header ul div:first-of-type {
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  header ul div:nth-of-type(2) {
+    background-color: black;
+    color: black;
+    margin-right: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  header ul button {
+    height: 2rem;
+    color: white;
+    background-color: #6C757D;
+    cursor: pointer;
+    font-family: "Baloo Tammudu 2", cursive;
+  }
 }
-
-.test1 {
-  background-color: red;
+@media (max-width: 1023px) and (min-width: 600px) {
+  header {
+    width: 100%;
+    height: 12rem;
+    position: sticky;
+  }
+  header h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    font-family: "Baloo Tammudu 2", cursive;
+  }
+  header ul {
+    list-style-type: none;
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header ul li {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  header ul li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-family: "Baloo Tammudu 2", cursive;
+  }
+  header ul div {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+  }
+  header ul div:first-of-type {
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  header ul div:nth-of-type(2) {
+    background-color: black;
+    color: black;
+    margin-right: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  header ul button {
+    height: 2rem;
+    color: white;
+    background-color: #6C757D;
+    cursor: pointer;
+    font-family: "Baloo Tammudu 2", cursive;
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 599px) {
+  header {
+    width: 100%;
+    height: 12rem;
+    position: sticky;
+  }
+  header h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    font-family: "Baloo Tammudu 2", cursive;
+  }
+  header ul {
+    list-style-type: none;
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header ul li {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  header ul li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-family: "Baloo Tammudu 2", cursive;
+  }
+  header ul div {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+  }
+  header ul div:first-of-type {
+    margin-left: 2rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  header ul div:nth-of-type(2) {
+    background-color: black;
+    color: black;
+    margin-right: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  header ul button {
+    height: 2rem;
+    color: white;
+    background-color: #6C757D;
+    cursor: pointer;
+    font-family: "Baloo Tammudu 2", cursive;
+    margin-top: 1.5rem;
+  }
+}
+section {
+  height: 800px;
+  width: 100%;
+  background-color: #F3F3F3;
 }
 
 /*# sourceMappingURL=app.css.map */
