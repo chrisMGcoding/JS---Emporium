@@ -6118,17 +6118,19 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+body {
+  font-family: "Baloo Tammudu 2", cursive;
+}
+
 @media (min-width: 1024px) {
   header {
     width: 100%;
-    height: 12rem;
-    position: fixed;
+    padding-bottom: 1rem;
   }
   header h1 {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
-    font-family: "Baloo Tammudu 2", cursive;
   }
   header ul {
     list-style-type: none;
@@ -6147,7 +6149,6 @@ readers do not read off random characters that represent icons */
     text-decoration: none;
     color: black;
     cursor: pointer;
-    font-family: "Baloo Tammudu 2", cursive;
   }
   header ul div {
     width: 1.5rem;
@@ -6174,20 +6175,17 @@ readers do not read off random characters that represent icons */
     color: white;
     background-color: #6C757D;
     cursor: pointer;
-    font-family: "Baloo Tammudu 2", cursive;
   }
 }
 @media (max-width: 1023px) and (min-width: 600px) {
   header {
     width: 100%;
-    height: 12rem;
-    position: sticky;
+    padding-bottom: 1rem;
   }
   header h1 {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
-    font-family: "Baloo Tammudu 2", cursive;
   }
   header ul {
     list-style-type: none;
@@ -6205,7 +6203,6 @@ readers do not read off random characters that represent icons */
     text-decoration: none;
     color: black;
     cursor: pointer;
-    font-family: "Baloo Tammudu 2", cursive;
   }
   header ul div {
     width: 1.5rem;
@@ -6233,21 +6230,18 @@ readers do not read off random characters that represent icons */
     color: white;
     background-color: #6C757D;
     cursor: pointer;
-    font-family: "Baloo Tammudu 2", cursive;
     margin-top: 1.5rem;
   }
 }
 @media (max-width: 599px) {
   header {
     width: 100%;
-    height: 12rem;
-    position: sticky;
+    padding-bottom: 1rem;
   }
   header h1 {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
-    font-family: "Baloo Tammudu 2", cursive;
   }
   header ul {
     list-style-type: none;
@@ -6265,7 +6259,6 @@ readers do not read off random characters that represent icons */
     text-decoration: none;
     color: black;
     cursor: pointer;
-    font-family: "Baloo Tammudu 2", cursive;
   }
   header ul div {
     width: 1.5rem;
@@ -6293,14 +6286,255 @@ readers do not read off random characters that represent icons */
     color: white;
     background-color: #6C757D;
     cursor: pointer;
-    font-family: "Baloo Tammudu 2", cursive;
     margin-top: 1.5rem;
   }
 }
-section {
-  height: 800px;
-  width: 100%;
-  background-color: #F3F3F3;
+@media (min-width: 1024px) {
+  section {
+    width: 100%;
+    background-color: #F3F3F3;
+    display: flex;
+    padding-bottom: 1rem;
+  }
+  section .left_shop {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20rem;
+  }
+  section .left_shop p:first-of-type {
+    font-size: 3rem;
+    color: #DD4545;
+    font-weight: bold;
+    margin: 0px;
+  }
+  section .left_shop img {
+    width: 90%;
+  }
+  section .left_shop p:nth-of-type(2) {
+    width: 100%;
+    color: #6C757D;
+    line-height: 1rem;
+  }
+  section .left_shop button {
+    border-radius: 40px;
+    border: none;
+    background-color: #DD4545;
+    padding: 1rem;
+  }
+  section .left_shop button a {
+    text-decoration: none;
+    color: white;
+  }
+  section .right_shop {
+    width: 40%;
+  }
+  section .right_shop img {
+    height: 30rem;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  section {
+    width: 100%;
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  section .left_shop {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section .left_shop p:first-of-type {
+    font-size: 3rem;
+    color: #DD4545;
+    font-weight: bold;
+    margin: 0px;
+  }
+  section .left_shop img {
+    width: 90%;
+  }
+  section .left_shop p:nth-of-type(2) {
+    width: 100%;
+    color: #6C757D;
+    line-height: 1rem;
+  }
+  section .left_shop button {
+    border-radius: 40px;
+    border: none;
+    background-color: #DD4545;
+    padding: 1rem;
+  }
+  section .left_shop button a {
+    text-decoration: none;
+    color: white;
+  }
+  section .right_shop {
+    width: 40%;
+  }
+  section .right_shop img {
+    height: 30rem;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+@media (max-width: 599px) {
+  section {
+    width: 100%;
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  section .left_shop {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section .left_shop p:first-of-type {
+    font-size: 3rem;
+    color: #DD4545;
+    font-weight: bold;
+    margin: 0px;
+  }
+  section .left_shop img {
+    width: 90%;
+  }
+  section .left_shop p:nth-of-type(2) {
+    width: 100%;
+    color: #6C757D;
+    line-height: 1rem;
+  }
+  section .left_shop button {
+    border-radius: 40px;
+    border: none;
+    background-color: #DD4545;
+    padding: 1rem;
+  }
+  section .left_shop button a {
+    text-decoration: none;
+    color: white;
+  }
+  section .right_shop {
+    width: 40%;
+  }
+  section .right_shop img {
+    height: 30rem;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+@media (min-width: 1024px) {
+  section {
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  section .photoVitrine {
+    width: 30%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section .photoVitrine .photoVitrineTexte {
+    font-size: 2rem;
+    color: white;
+    border-bottom: 2px solid white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  section #photo1 {
+    background-image: url("../../../public/images/services/service-1.jpg");
+    background-size: cover;
+  }
+  section #photo2 {
+    background-image: url("../../../public/images/services/service-2.jpg");
+    background-size: cover;
+  }
+  section #photo3 {
+    background-image: url("../../../public/images/services/slider-3.jpg");
+    background-size: cover;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  section {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  section .photoVitrine {
+    width: 30%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  section .photoVitrine .photoVitrineTexte {
+    font-size: 1.5rem;
+    color: white;
+    border-bottom: 2px solid white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  section #photo1 {
+    background-image: url("../../../public/images/services/service-1.jpg");
+    background-size: cover;
+  }
+  section #photo2 {
+    background-image: url("../../../public/images/services/service-2.jpg");
+    background-size: cover;
+  }
+  section #photo3 {
+    background-image: url("../../../public/images/services/slider-3.jpg");
+    background-size: cover;
+  }
+}
+@media (max-width: 599px) {
+  section {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  section .photoVitrine {
+    width: 30%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  section .photoVitrine .photoVitrineTexte {
+    font-size: 1rem;
+    color: white;
+    border-bottom: 2px solid white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  section #photo1 {
+    background-image: url("../../../public/images/services/service-1.jpg");
+    background-size: cover;
+  }
+  section #photo2 {
+    background-image: url("../../../public/images/services/service-2.jpg");
+    background-size: cover;
+  }
+  section #photo3 {
+    background-image: url("../../../public/images/services/slider-3.jpg");
+    background-size: cover;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

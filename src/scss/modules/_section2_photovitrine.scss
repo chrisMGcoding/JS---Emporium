@@ -1,0 +1,106 @@
+@media (min-width : 1024px) {
+    section {
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+        .photoVitrine {
+            width: 30%;
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .photoVitrineTexte {
+                font-size: 2rem;
+                color: white;
+                border-bottom: 2px solid white;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+        #photo1 {
+            background-image: url("../../../public/images/services/service-1.jpg");
+            background-size: cover;
+        }
+        #photo2 {
+            background-image: url("../../../public/images/services/service-2.jpg");
+            background-size: cover;
+        }
+        #photo3 {
+            background-image: url("../../../public/images/services/slider-3.jpg");
+            background-size: cover;
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width : 1023px) {
+    section {
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        .photoVitrine {
+            width: 30%;
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+            .photoVitrineTexte {
+                font-size: 1.5rem;
+                color: white;
+                border-bottom: 2px solid white;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+        #photo1 {
+            background-image: url("../../../public/images/services/service-1.jpg");
+            background-size: cover;
+        }
+        #photo2 {
+            background-image: url("../../../public/images/services/service-2.jpg");
+            background-size: cover;
+        }
+        #photo3 {
+            background-image: url("../../../public/images/services/slider-3.jpg");
+            background-size: cover;
+        }
+    }
+}
+
+@media (max-width: 599px) {
+    section {
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        .photoVitrine {
+            width: 30%;
+            height: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+            .photoVitrineTexte {
+                font-size: 1rem;
+                color: white;
+                border-bottom: 2px solid white;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+        #photo1 {
+            background-image: url("../../../public/images/services/service-1.jpg");
+            background-size: cover;
+        }
+        #photo2 {
+            background-image: url("../../../public/images/services/service-2.jpg");
+            background-size: cover;
+        }
+        #photo3 {
+            background-image: url("../../../public/images/services/slider-3.jpg");
+            background-size: cover;
+        }
+    }
+}
+
+
+
