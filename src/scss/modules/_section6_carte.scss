@@ -1,0 +1,181 @@
+@media (min-width: 1024px) {
+    .cartePresentation {
+        height: 25rem;
+        .carte1 {
+            width: 30%; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: darkgray;
+        }
+        .carte1>h3 {
+            color: $carte;
+            text-align: center;
+        }
+        .carte1>p {
+            line-height: 1rem;
+            text-align: center;
+            color: grey;
+        }
+        .carte1>button {
+            background-color: $carte;
+            padding: 1rem;
+            border-radius: 10px;
+            border: none;
+        }
+        .carte1>button>a {
+            color: white;
+            text-decoration: none;
+        }
+        .carte2 {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $bouton;
+            color: white;
+        }
+        .carte1>h3 {
+            color: $carte;
+            text-align: center;
+        }
+        .carte2>p {
+            line-height: 1rem;
+            text-align: center;
+        }
+        .carte2>button {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            border: none;
+        }
+        .carte2>button>a {
+            color: $connexion;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+    .cartePresentation {
+        .carte1 {
+            width: 50%; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: darkgray;
+            padding-bottom: 1rem;
+        }
+        .carte1>h3 {
+            color: $carte;
+            text-align: center;
+        }
+        .carte1>p {
+            line-height: 1rem;
+            text-align: center;
+            color: grey;
+        }
+        .carte1>button {
+            background-color: $carte;
+            padding: 1rem;
+            border-radius: 10px;
+            border: none;
+        }
+        .carte1>button>a {
+            color: white;
+            text-decoration: none;
+        }
+        .carte2 {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $bouton;
+            color: white;
+            padding-bottom: 1rem; 
+        }
+        .carte1>h3 {
+            color: $carte;
+            text-align: center;
+        }
+        .carte2>p {
+            line-height: 1rem;
+            text-align: center;
+        }
+        .carte2>button {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            border: none;
+        }
+        .carte2>button>a {
+            color: $connexion;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (max-width: 599px) {
+    .cartePresentation {
+        .carte1 {
+            width: 50%; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: darkgray;
+            padding-bottom: 1rem;
+        }
+        .carte1>h3 {
+            color: $carte;
+            text-align: center;
+        }
+        .carte1>p {
+            line-height: 1rem;
+            text-align: center;
+            color: grey;
+        }
+        .carte1>button {
+            background-color: $carte;
+            padding: 1rem;
+            border-radius: 10px;
+            border: none;
+        }
+        .carte1>button>a {
+            color: white;
+            text-decoration: none;
+        }
+        .carte2 {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $bouton;
+            color: white;
+            padding-bottom: 1rem; 
+        }
+        .carte1>h3 {
+            color: $carte;
+            text-align: center;
+        }
+        .carte2>p {
+            line-height: 1rem;
+            text-align: center;
+        }
+        .carte2>button {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            border: none;
+        }
+        .carte2>button>a {
+            color: $connexion;
+            text-decoration: none;
+        }
+    }
+}
