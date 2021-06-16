@@ -7019,6 +7019,54 @@ body {
     text-decoration: none;
   }
 }
+.aboutUs {
+  background-color: #6C757D;
+  display: flex;
+  justify-content: center;
+}
+.aboutUs .aboutUsMain {
+  width: 70%;
+  display: flex;
+}
+.aboutUs .aboutUsMain .us {
+  width: 30%;
+  line-height: 1rem;
+}
+.aboutUs .aboutUsMain .us > h5 {
+  color: white;
+}
+.aboutUs .aboutUsMain .us > p {
+  color: #595C5E;
+}
+.aboutUs .aboutUsMain .recent {
+  width: 30%;
+  line-height: 1rem;
+}
+.aboutUs .aboutUsMain .recent > h5 {
+  color: white;
+}
+.aboutUs .aboutUsMain .recent > p {
+  color: white;
+}
+.aboutUs .aboutUsMain .tag {
+  width: 30%;
+}
+.aboutUs .aboutUsMain .tag > h5 {
+  color: white;
+  margin-bottom: 0px;
+}
+.aboutUs .aboutUsMain .tag > button {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #595C5E;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+.aboutUs .aboutUsMain .tag > button > a {
+  text-decoration: none;
+  color: #595C5E;
+}
+
 footer {
   background-color: black;
 }

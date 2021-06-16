@@ -1,0 +1,47 @@
+.aboutUs {
+    background-color: $connexion;
+    display: flex;
+    justify-content: center;
+    .aboutUsMain {
+        width: 70%;
+        display: flex;
+        .us {
+            width: 30%;
+            line-height: 1rem;
+        }
+        .us>h5 {
+            color: white;
+        }
+        .us>p {
+            color: #595C5E;
+        }
+        .recent {
+            width: 30%;
+            line-height: 1rem;
+        }
+        .recent>h5 {
+            color: white;
+        }
+        .recent>p {
+            color: white;
+        }
+        .tag {
+            width: 30%;
+        }
+        .tag>h5 {
+            color: white;
+            margin-bottom: 0px;
+        }
+        .tag>button {
+            background-color: transparent;
+            border-radius: 10px;
+            border: 1px solid #595C5E;
+            padding: 0.5rem;
+            margin: 0.5rem;
+        }
+        .tag>button>a {
+            text-decoration: none;
+            color: #595C5E;
+        }
+    }
+}
