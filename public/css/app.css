@@ -6120,12 +6120,17 @@ readers do not read off random characters that represent icons */
 
 body {
   font-family: "Baloo Tammudu 2", cursive;
+  overflow: scroll;
 }
 
 @media (min-width: 1024px) {
   header {
     width: 100%;
     padding-bottom: 1rem;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 5;
   }
   header h1 {
     display: flex;
@@ -6176,11 +6181,20 @@ body {
     background-color: #6C757D;
     cursor: pointer;
   }
+
+  .scroll {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 @media (max-width: 1023px) and (min-width: 600px) {
   header {
     width: 100%;
     padding-bottom: 1rem;
+    position: sticky;
+    top: 20px;
+    background-color: white;
+    z-index: 5;
   }
   header h1 {
     display: flex;
@@ -6237,6 +6251,10 @@ body {
   header {
     width: 100%;
     padding-bottom: 1rem;
+    position: sticky;
+    top: 20px;
+    background-color: white;
+    z-index: 5;
   }
   header h1 {
     display: flex;
@@ -6635,6 +6653,19 @@ body {
   .recentProduct .productDescription .productImagePrice .productPrice1 .productPriceText .red {
     color: #DD4545;
   }
+
+  .zoom {
+    padding: 50px;
+    transition: transform 0.2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    z-index: 1;
+  }
+
+  .zoom:hover {
+    transform: scale(1.5);
+  }
 }
 @media (min-width: 700px) and (max-width: 1023px) {
   .recentProduct {
@@ -6870,8 +6901,78 @@ body {
     color: white;
   }
 }
-.carroussel {
-  height: 400px;
+#car {
+  width: 100%;
+  margin-top: 2%;
+  overflow: hidden;
+}
+
+#titreu {
+  width: 100%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#sec {
+  width: 95%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+}
+
+#sec::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+#div-boule {
+  height: 50px;
+  text-align: center;
+}
+#div-boule .boule {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin: 2%;
+}
+
+#sec .div-image {
+  min-width: 260px;
+  left: 0;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  margin: 10px 20px;
+  color: white;
+  transition: 0.5s;
+}
+
+.imgCarousel {
+  width: 260px;
+}
+
+.txtCarousel {
+  width: 260px;
+  font-size: 15px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+}
+
+.txtCarousel2 {
+  width: 260px;
+  font-size: 15px;
+  color: #df4340;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+}
+
+.spanCarousel {
+  color: gray;
+  text-decoration: line-through;
 }
 
 @media (min-width: 1024px) {
@@ -7200,14 +7301,14 @@ footer > div {
 }
 
 .hidden {
-  position: absolute !important;
+  display: none;
   height: 1px;
   overflow: hidden;
   width: 1px;
 }
 
 .flou {
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 .relative {
@@ -7218,6 +7319,7 @@ footer > div {
   position: fixed;
   top: 5rem;
   left: 25rem;
+  z-index: 10;
 }
 
 /*# sourceMappingURL=app.css.map */

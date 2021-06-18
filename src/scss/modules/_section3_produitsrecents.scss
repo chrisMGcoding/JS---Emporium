@@ -96,6 +96,17 @@
             }
         }
     }
+    .zoom {
+        padding: 50px;
+        transition: transform .2s;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        z-index: 1;
+    }
+    .zoom:hover {
+        transform: scale(1.5);
+      }
 }
 
 @media (min-width: 700px) and (max-width: 1023px) {

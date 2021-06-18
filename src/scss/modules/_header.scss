@@ -1,5 +1,6 @@
 body {
     font-family: 'Baloo Tammudu 2', cursive;
+    overflow: scroll;
 }
 
 
@@ -7,10 +8,14 @@ body {
     header {
         width: 100%;
         padding-bottom: 1rem;
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        z-index: 5;
         h1 {
             display: flex;
             justify-content: center;
-            padding-top: 1rem
+            padding-top: 1rem;
         }
         ul {
             list-style-type: none;
@@ -58,12 +63,20 @@ body {
             }
         }
     }
+    .scroll {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 @media (max-width: 1023px) and (min-width : 600px) {
     header {
         width: 100%;
         padding-bottom: 1rem;
+        position: sticky;
+        top: 20px;
+        background-color: white;
+        z-index: 5;
         h1 {
             display: flex;
             justify-content: center;
@@ -123,6 +136,10 @@ body {
     header {
         width: 100%;
         padding-bottom: 1rem;
+        position: sticky;
+        top: 20px;
+        background-color: white;
+        z-index: 5;
         h1 {
             display: flex;
             justify-content: center;

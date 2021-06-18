@@ -51,14 +51,14 @@
 // classe formulaire 
 
 .hidden {
-    position: absolute !important;
+    display: none;
     height: 1px;
     overflow: hidden;
     width: 1px;
 }
 
 .flou {
-    opacity: 0.5;
+    opacity: 0.1;
 }
 
 .relative {
@@ -69,4 +69,5 @@
     position: fixed;
     top: 5rem;
     left: 25rem;
+    z-index: 10;
 }

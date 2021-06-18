@@ -13,7 +13,7 @@
 
 <body>
 <!-- ---------------------- section header --------------------------- -->
-    <header>
+    <header id="header">
 
         <h1>emporium.</h1>
 
@@ -89,7 +89,7 @@
             <!-- celle qui prend texte et image -->
             <div class="productImagePrice"> 
                 <!-- celle qui prend photo -->
-                <div class="productImage">
+                <div class="productImage" id="testing1">
                     
                     <img class="photoProduit" src="./public/images/products_mini/product-luxry-sofa.jpg" alt="">
 
@@ -115,7 +115,7 @@
             
             <div class="productImagePrice"> 
                 
-                <div class="productImage">
+                <div class="productImage" id="testing2">
                     
                     <img class="photoProduit" src="./public/images/products_mini/product-gloves.jpg" alt="">
 
@@ -149,7 +149,7 @@
             <!-- celle qui prend texte et image -->
             <div class="productImagePrice"> 
                 <!-- celle qui prend photo -->
-                <div class="productImage">
+                <div class="productImage" id="testing3">
                     
                     <img class="photoProduit" src="./public/images/products_mini/product-cups.jpg" alt="">
 
@@ -175,7 +175,7 @@
             
             <div class="productImagePrice"> 
                 
-                <div class="productImage">
+                <div class="productImage" id="testing4">
                     
                     <img class="photoProduit" src="./public/images/products_mini/product-bag.jpg" alt="">
 
@@ -208,7 +208,7 @@
             <!-- celle qui prend texte et image -->
             <div class="productImagePrice"> 
                 <!-- celle qui prend photo -->
-                <div class="productImage">
+                <div class="productImage" id="testing5">
                     
                     <img class="photoProduit" src="./public/images/products_mini/product-tshitr.jpg" alt="">
 
@@ -234,7 +234,7 @@
             <!-- celle qui prend texte et image -->
             <div class="productImagePrice"> 
                 <!-- celle qui prend photo -->
-                <div class="productImage">
+                <div class="productImage" id="testing6">
                     
                     <img class="photoProduit" src="./public/images/products_mini/product-plates.jpg" alt="">
 
@@ -260,7 +260,7 @@
             <!-- celle qui prend texte et image -->
             <div class="productImagePrice"> 
                 <!-- celle qui prend photo -->
-                <div class="productImage">
+                <div class="productImage" id="testing7">
                     
                     <img class="photoProduit" src="./public/images/products_mini/product-modern-sofa.jpg" alt="">
 
@@ -286,9 +286,9 @@
             <!-- celle qui prend texte et image -->
             <div class="productImagePrice"> 
                 <!-- celle qui prend photo -->
-                <div class="productImage">
+                <div class="productImage" id="testing8">
                     
-                    <img class="photoProduit" src="./public/images/products_mini/product-bed.jpg" alt="">
+                    <img class="photoProduit" src="./public/images/products_mini/product-bed.jpg" id="test8" alt="">
 
                     <div class="overlay">
                         <p class="texte" id="texte1">View Details</p>
@@ -309,12 +309,12 @@
 
             <!-- ----------- photo 9 ------------- -->
 
-            <!-- celle qui prend texte et image -->
+            
             <div class="productImagePrice"> 
-                <!-- celle qui prend photo -->
-                <div class="productImage">
+                
+                <div class="productImage" id="testing9">
                     
-                    <img class="photoProduit" id="test10" src="./public/images/products_mini/product-shoes.jpg" alt="">
+                    <img class="photoProduit" id="test9" src="./public/images/products_mini/product-shoes.jpg" alt="">
 
                     <div class="overlay">
                         <p class="texte" id="texte1">View Details</p>
@@ -323,7 +323,6 @@
                     
                 </div>
 
-                <!-- celle qui prend texte en dessous photo -->
                 <div class="productPrice">
 
                     <p class="productText">Minimal Shoes</p>
@@ -349,9 +348,76 @@
 
 <!-- ---------------------- section 5_carroussel --------------------------- -->
 
-    <section class="carroussel">
+    <!-- <section class="carroussel">
 
+        <div class="carroussel_items carroussel_items--visible">
+            <img src="./public/images/products/product-bag-2-700x500.jpg" alt="">
+        </div>
+
+        <div class="carroussel_items">
+            <img src="./public/images/products/product-bag-700x500.jpg" alt="">
+        </div>
+
+        <div class="carroussel_items">
+            <img src="./public/images/products/product-jacket-700x500.jpg" alt="">
+        </div>
+
+        <div class="carroussel_action">
+            <button id="previous" aria-label="Previous slide"><</button>
+            <button id="next" aria-label="Next slide">></button>
+        </div>
+
+    </section> -->
+
+    <section id="car">
+        <h1 id="titreu">Hot Fashion Products</h1>
+        <div id="sec">
+            <div class="div-image">
+                <img class="imgCarousel" src="./public/images/products_mini/product-luxry-sofa.jpg" alt="">
+                <p class="txtCarousel">Luxury Sofa</p>
+                <p class="txtCarousel2">$800.00</p>
+            </div>
+            <div class="div-image">
+                <img class="imgCarousel" src="./public/images/products_mini/product-gloves.jpg" alt="">
+                <p class="txtCarousel">Leather Gloves</p>
+                <p class="txtCarousel2"><span class="spanCarousel">$34.00</span> $27.00</p>
+            </div>
+            <div class="div-image">
+                <img class="imgCarousel" src="./public/images/products_mini/product-cups.jpg" alt="">
+                <p class="txtCarousel">Colorful Bowls</p>
+                <p class="txtCarousel2">$18.00</p>
+            </div>
+            <div class="div-image">
+                <img class="imgCarousel" src="./public/images/products_mini/product-bag.jpg" alt="">
+                <p class="txtCarousel">Leather Gloves</p>
+                <p class="txtCarousel2"><span class="spanCarousel">$420.00</span> $350.00</p>
+            </div>
+            <div class="div-image">
+                <img class="imgCarousel" src="./public/images/products_mini/product-tshitr.jpg" alt="">
+                <p class="txtCarousel">Minimal T-Shirt</p>
+                <p class="txtCarousel2">$15.00</p>
+            </div>
+            <div class="div-image">
+                <img class="imgCarousel" src="./public/images/products_mini/product-plates.jpg" alt="">
+                <p class="txtCarousel">Plates Set</p>
+                <p class="txtCarousel2">$30.00</p>
+            </div>
+            <div class="div-image">
+                <img class="imgCarousel" src="./public/images/products_mini/product-modern-sofa.jpg" alt="">
+                <p class="txtCarousel">Modern Sofa</p>
+                <p class="txtCarousel2">$900.00</p>
+            </div>
+    
+        </div>
+    <div id="div-boule">
+        <button class="boule"></button>
+        <button class="boule"></button>
+        <button class="boule"></button>
+        <button class="boule"></button>
+    </div>
     </section>
+
+
 
 <!-- ---------------------- section 6_carte --------------------------- -->
 
@@ -493,7 +559,7 @@
 
         <div class="contact_title">
             <p>Emporium.</p>
-            <p>X</p>
+            <span class="close">&times;</span>
         </div>
 
         <div class="contact_bouton">
