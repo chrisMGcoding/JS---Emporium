@@ -41,229 +41,81 @@ boutonNoir.addEventListener("click", () => {
 
 // mise en place du formulaire de connexion ---------------------
 
-let bouton_co = document.querySelector("button");
-let bouton_connexion = document.querySelectorAll("button")[16];
-let bouton_inscription = document.querySelectorAll("button")[17];
-console.log(bouton_inscription)
+let bouton = document.querySelector("button");
 
-let inscription = document.querySelectorAll("section")[7];
-let connexion = document.querySelectorAll("section")[8];
- 
-let span = document.getElementsByClassName("close")[0];
+let formulaire = Array.from(document.getElementsByClassName("formulaire"))[0];
+
+let formulaire1 = Array.from(document.getElementsByClassName("formulaire1"))[0];
+
+let formulaire2 = Array.from(document.getElementsByClassName("formulaire2"))[0];
+
+let inscription = Array.from(document.getElementsByClassName("inscription"))[0];
+
+let connexion = Array.from(document.getElementsByClassName("connexion"));
 
 let tabSectionFlou = [myHeader, section2, section3, section4, section5, section6, section7];
 
-bouton_co.addEventListener("click", () => {
-    inscription.classList.toggle("hidden");
-    inscription.classList.toggle("absolute");
-    myBody.classList.toggle("relative");
+let closeBouton = document.getElementsByClassName("close")[0];
+
+let bouton_connexion = Array.from(document.getElementsByClassName("connexionBouton"))[0];
+
+let bouton_inscription = Array.from(document.getElementsByClassName("inscriptionBouton"))[0];
+
+bouton.addEventListener("click", () => {
+    formulaire.style.display = "flex";
+    inscription.classList.add("visible");
+    formulaire1.style.display = "flex";
     tabSectionFlou.forEach(element => {
         element.classList.add("flou");
-    })
+    });
 });
-
-bouton_connexion.addEventListener("click", () => {
-    connexion.classList.toggle("hidden");
-    connexion.classList.toggle("absolute");
-    inscription.classList.toggle("hidden");
-});
-
-// bouton_inscription.addEventListener("click", () => {
-//     inscription.classList.toggle("absolute");
-//     connexion.classList.toggle("hidden");
-//     console.log("coucou")
-// })
-
-let closeBouton = document.querySelectorAll("span")[11];
 
 closeBouton.addEventListener("click", () => {
+    inscription.classList.remove("visible");
+    formulaire.style.display = "none";
     tabSectionFlou.forEach(element => {
         element.classList.remove("flou");
     })
-    inscription.classList.add("hidden");
-    connexion.classList.add("hidden");
+    formulaire1.style.display = "none";
+    formulaire2.style.display = "none";
+})
+
+// window.addEventListener("click", () => {
+//     if (inscription.classList.contains("visible")) {
+//         inscription.classList.remove("visible");
+//         inscription.style.display = "none";
+//         tabSectionFlou.forEach(element => {
+//             element.classList.remove("flou");
+//         })
+//     } else {
+//         console.log("nope")
+//     }
+// })
+
+// if (inscription.classList.contains("visible")) {
+//     window.addEventListener("click", (e) => {
+//         inscription.classList.remove("visible");
+//         inscription.style.display = "none";
+//         tabSectionFlou.forEach(element => {
+//             element.classList.remove("flou");
+//         })
+//     })
+// }
+// else {
+//     console.log("nope")
+// }
+
+bouton_connexion.addEventListener("click", () => {
+    formulaire1.style.display = "none";
+    formulaire2.style.display = "flex";
+})
+
+bouton_inscription.addEventListener("click", () => {
+    formulaire1.style.display = "flex";
+    formulaire2.style.display = "none";
 })
 
 // mise en place du zoom photo et du hover -----------------------
-
-// let photoAll = Array.from(section3.querySelectorAll("img"));
-
-// photoDiv.forEach(element => {
-//     element.addEventListener("click", (e) => {
-//        else if (e.target.src == "http://127.0.0.1:5500/public/images/products_mini/product-plates.jpg") {
-//             zoomin6()
-//         }
-//     })
-// })
-
-// photoAll.forEach(element => {
-//     element.addEventListener("click", (e) => {
-
-//         if (e.target.src == "http://127.0.0.1:5500/public/images/products_mini/product-shoes.jpg") {
-//             zoomin9();
-//         } 
-//         else if (e.target.src == "http://127.0.0.1:5500/public/images/products_mini/product-bed.jpg") {
-//             zoomin8()
-//         }
-//         // else if (e.target.src == "http://127.0.0.1:5500/public/images/products_mini/product-modern-sofa.jpg") {
-//         //     zoomin7()
-//         // }
-//         // else if (e.target.src == "http://127.0.0.1:5500/public/images/products_mini/product-plates.jpg") {
-//         //     zoomin6()
-//         // }
-//         else {
-//             console.log(e.target.src)
-//         }
-
-//     })
-// })
-
-
-
-// photoAll.forEach(element => {
-//     element.addEventListener("click", (e) => {
-//         if (e.target.src == "http://127.0.0.1:5500/public/images/products_mini/product-shoes.jpg") {
-//             zoomout9();
-//         } 
-//     })
-// })
-
-// // -------------------------------------
-
-// let zoomin9 = () => {
-//     let photo = document.getElementById("test9");
-//     let width = photo.clientWidth;
-//     photo.style.width = (width + 100) + "px";
-// }
-
-
-// let zoomout9 = () => {
-//     let photo = document.getElementById("test9");
-//     let width = photo.clientWidth;
-//     photo.style.width = (width - 100) + "px";
-// }
-
-// // -------------------------------------
-
-// let zoomin8 = () => {
-//     let photo = document.getElementById("test8");
-//     let width = photo.clientWidth;
-//     photo.style.width = (width + 100) + "px";
-// }
-
-
-// let zoomout8 = () => {
-//     let photo = document.getElementById("test8");
-//     let width = photo.clientWidth;
-//     photo.style.width = (width - 100) + "px";
-// }
-
-// // -------------------------------------
-
-// let zoomin7 = () => {
-//     let photo = document.getElementById("test7");
-//     let width = photo.clientWidth;
-//     photo.style.width = (width + 100) + "px";
-// }
-
-
-// let zoomout7 = () => {
-//     let photo = document.getElementById("test7");
-//     let width = photo.clientWidth;
-//     photo.style.width = (width - 100) + "px";
-// }
-
-// // -------------------------------------
-
-// let zoomin6 = () => {
-//     let photo = document.getElementById("test6");
-//     let width = photo.clientWidth;
-//     photo.style.width = (width + 100) + "px";
-// }
-
-
-// let zoomout6 = () => {
-//     let photo = document.getElementById("test6");
-//     let width = photo.clientWidth;
-//     photo.style.width = (width - 100) + "px";
-// }
-
-// // -------------------------------------
-
-// let zoomin5 = () => {
-//     let photo = document.getElementById("test5");
-//     let width = photo.clientWidth;
-//     photo.style.width = (width + 100) + "px";
-// }
-
-
-// let zoomout5 = () => {
-//     let photo = document.getElementById("test5");
-//     let width = photo.clientWidth;
-//     photo.style.width = (width - 100) + "px";
-// }
-
-// // -------------------------------------
-
-// let zoomin4 = () => {
-//     let photo = document.getElementById("test4");
-//     let width = photo.clientWidth;
-//     photo.style.width = (width + 100) + "px";
-// }
-
-
-// let zoomout4 = () => {
-//     let photo = document.getElementById("test4");
-//     let width = photo.clientWidth;
-//     photo.style.width = (width - 100) + "px";
-// }
-
-// // -------------------------------------
-
-// let zoomin3 = () => {
-//     let photo = document.getElementById("test3");
-//     let width = photo.clientWidth;
-//     photo.style.width = (width + 100) + "px";
-// }
-
-
-// let zoomout3 = () => {
-//     let photo = document.getElementById("test3");
-//     let width = photo.clientWidth;
-//     photo.style.width = (width - 100) + "px";
-// }
-
-// // -------------------------------------
-
-// let zoomin2 = () => {
-//     let photo = document.getElementById("test2");
-//     let width = photo.clientWidth;
-//     photo.style.width = (width + 100) + "px";
-// }
-
-
-// let zoomout2 = () => {
-//     let photo = document.getElementById("test2");
-//     let width = photo.clientWidth;
-//     photo.style.width = (width - 100) + "px";
-// }
-
-// // -------------------------------------
-
-// let zoomin1 = () => {
-//     let photo = document.getElementById("test1");
-//     let width = photo.clientWidth;
-//     photo.style.width = (width + 100) + "px";
-// }
-
-
-// let zoomout1 = () => {
-//     let photo = document.getElementById("test1");
-//     let width = photo.clientWidth;
-//     photo.style.width = (width - 100) + "px";
-// }
-
-
 
 let photoDiv1 = document.getElementById("testing1");
 let photoDiv2 = document.getElementById("testing2");
@@ -275,49 +127,75 @@ let photoDiv7 = document.getElementById("testing7");
 let photoDiv8 = document.getElementById("testing8");
 let photoDiv9 = document.getElementById("testing9");
 
-photoDiv1.addEventListener("click", () => {
-    photoDiv1.classList.toggle("zoom");
-    console.log("ok")
+photoDiv1.addEventListener("mouseover", () => {
+    photoDiv1.classList.add("zoom");
+})
+photoDiv1.addEventListener("mouseout", () => {
+    photoDiv1.classList.remove("zoom");
 })
 
-photoDiv2.addEventListener("click", () => {
-    photoDiv2.classList.toggle("zoom");
-    console.log("ok")
+photoDiv2.addEventListener("mouseover", () => {
+    photoDiv2.classList.add("zoom");
 })
 
-photoDiv3.addEventListener("click", () => {
-    photoDiv3.classList.toggle("zoom");
-    console.log("ok")
+photoDiv2.addEventListener("mouseout", () => {
+    photoDiv2.classList.remove("zoom");
 })
 
-photoDiv4.addEventListener("click", () => {
-    photoDiv4.classList.toggle("zoom");
-    console.log("ok")
+photoDiv3.addEventListener("mouseover", () => {
+    photoDiv3.classList.add("zoom");
 })
 
-photoDiv5.addEventListener("click", () => {
-    photoDiv5.classList.toggle("zoom");
-    console.log("ok")
+photoDiv3.addEventListener("mouseout", () => {
+    photoDiv3.classList.remove("zoom");
 })
 
-photoDiv6.addEventListener("click", () => {
-    photoDiv6.classList.toggle("zoom");
-    console.log("ok")
+photoDiv4.addEventListener("mouseover", () => {
+    photoDiv4.classList.add("zoom");
 })
 
-photoDiv7.addEventListener("click", () => {
-    photoDiv7.classList.toggle("zoom");
-    console.log("ok")
+photoDiv4.addEventListener("mouseout", () => {
+    photoDiv4.classList.remove("zoom");
 })
 
-photoDiv8.addEventListener("click", () => {
-    photoDiv8.classList.toggle("zoom");
-    console.log("ok")
+photoDiv5.addEventListener("mouseover", () => {
+    photoDiv5.classList.add("zoom");
 })
 
-photoDiv9.addEventListener("click", () => {
-    photoDiv9.classList.toggle("zoom");
-    console.log("ok")
+photoDiv5.addEventListener("mouseout", () => {
+    photoDiv5.classList.remove("zoom");
+})
+
+photoDiv6.addEventListener("mouseover", () => {
+    photoDiv6.classList.add("zoom");
+})
+
+photoDiv6.addEventListener("mouseout", () => {
+    photoDiv6.classList.remove("zoom");
+})
+
+photoDiv7.addEventListener("mouseover", () => {
+    photoDiv7.classList.add("zoom");
+})
+
+photoDiv7.addEventListener("mouseout", () => {
+    photoDiv7.classList.remove("zoom");
+})
+
+photoDiv8.addEventListener("mouseover", () => {
+    photoDiv8.classList.add("zoom");
+})
+
+photoDiv8.addEventListener("mouseout", () => {
+    photoDiv8.classList.remove("zoom");
+})
+
+photoDiv9.addEventListener("mouseover", () => {
+    photoDiv9.classList.add("zoom");
+})
+
+photoDiv9.addEventListener("mouseout", () => {
+    photoDiv9.classList.remove("zoom");
 })
 
 // mise en place du changement d'agencement du titre -----------------------
@@ -334,6 +212,9 @@ window.addEventListener("scroll", (e) => {
 })
 
 // mise en place carroussel
+
+
+  
 
 // let slidePosition = 0;
 // let slides = document.getElementsByClassName("carroussel_items");

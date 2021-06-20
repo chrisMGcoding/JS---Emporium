@@ -41,21 +41,18 @@
 //     }
 // }
 
-#car{
+#caroussel {
     width: 100%;
     margin-top: 2%;
     overflow: hidden;
-
-
-};
-#titreu{
+}
+#caroussel_titre{
     width: 100%;
     margin-top: 3%;
     margin-bottom: 3%;
     display: flex;
     justify-content: center;
-    font-family: 'Poppins', sans-serif;
-};
+}
 
 #sec{
     width: 95%;
@@ -63,7 +60,7 @@
     display: flex;
     justify-content: left;
     overflow-x: auto;
-};
+}
 
 #sec::-webkit-scrollbar{
     visibility: hidden;
@@ -77,9 +74,10 @@
         height: 20px;
         width: 20px;
         margin: 2%;
-    };
+        cursor: pointer;
+    }
 
-};
+}
 
 #sec{
 
@@ -94,8 +92,8 @@
         margin: 10px 20px;
         color: white;
         transition: 0.5s;
-    };
-};
+    }
+}
 
 .imgCarousel{
     width: 260px;
@@ -104,14 +102,12 @@
     width: 260px;
     font-size: 15px;
     color:black;
-    font-family: 'Poppins', sans-serif;
     margin-top: 10px;
 }
 .txtCarousel2{
     width: 260px;
     font-size: 15px;
     color: rgba(223,67,64,255);
-    font-family: 'Poppins', sans-serif;
     margin-top: 10px;
 }
 .spanCarousel{

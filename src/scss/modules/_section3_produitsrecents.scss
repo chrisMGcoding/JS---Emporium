@@ -29,15 +29,17 @@
                         bottom: 0;
                         left: 0;
                         right: 0;
-                        background-color: white;
+                        background-color: transparent;
                         overflow: hidden;
-                        width: 100%;
+                        width: 90%;
                         height: 0;
                         transition: 3s ease;
                     }
                 }
                 .productImage:hover .overlay {
                     height: 31%;
+                    padding-left: 13px;
+                    padding-bottom: 2rem;
                 }
                 #texte1 {
                     color: white;
@@ -97,16 +99,10 @@
         }
     }
     .zoom {
-        padding: 50px;
-        transition: transform .2s;
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
+        transform: scale(1.5);
+        transition: 3s ease;
         z-index: 1;
     }
-    .zoom:hover {
-        transform: scale(1.5);
-      }
 }
 
 @media (min-width: 700px) and (max-width: 1023px) {

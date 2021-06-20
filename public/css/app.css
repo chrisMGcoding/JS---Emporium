@@ -6590,14 +6590,16 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: white;
+    background-color: transparent;
     overflow: hidden;
-    width: 100%;
+    width: 90%;
     height: 0;
     transition: 3s ease;
   }
   .recentProduct .productDescription .productImagePrice .productImage:hover .overlay {
     height: 31%;
+    padding-left: 13px;
+    padding-bottom: 2rem;
   }
   .recentProduct .productDescription .productImagePrice #texte1 {
     color: white;
@@ -6655,16 +6657,9 @@ body {
   }
 
   .zoom {
-    padding: 50px;
-    transition: transform 0.2s;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    z-index: 1;
-  }
-
-  .zoom:hover {
     transform: scale(1.5);
+    transition: 3s ease;
+    z-index: 1;
   }
 }
 @media (min-width: 700px) and (max-width: 1023px) {
@@ -6901,19 +6896,18 @@ body {
     color: white;
   }
 }
-#car {
+#caroussel {
   width: 100%;
   margin-top: 2%;
   overflow: hidden;
 }
 
-#titreu {
+#caroussel_titre {
   width: 100%;
   margin-top: 3%;
   margin-bottom: 3%;
   display: flex;
   justify-content: center;
-  font-family: "Poppins", sans-serif;
 }
 
 #sec {
@@ -6937,6 +6931,7 @@ body {
   height: 20px;
   width: 20px;
   margin: 2%;
+  cursor: pointer;
 }
 
 #sec .div-image {
@@ -6958,7 +6953,6 @@ body {
   width: 260px;
   font-size: 15px;
   color: black;
-  font-family: "Poppins", sans-serif;
   margin-top: 10px;
 }
 
@@ -6966,7 +6960,6 @@ body {
   width: 260px;
   font-size: 15px;
   color: #df4340;
-  font-family: "Poppins", sans-serif;
   margin-top: 10px;
 }
 
@@ -7208,118 +7201,86 @@ footer > div {
   color: white;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  border: 1px solid black;
-}
-.contact .contact_title {
-  display: flex;
-  justify-content: space-between;
-}
-.contact .contact_bouton {
-  display: flex;
-  justify-content: center;
-}
-.contact .contact_bouton button {
-  margin: 1rem;
-  padding: 0.5rem;
-  background-color: #DD4545;
-  border: none;
-  border-radius: 10px;
-}
-.contact .contact_bouton button a {
-  color: white;
-}
-.contact .contact_contact {
-  line-height: 1rem;
-}
-.contact .contact_contact p {
-  margin: 0.5rem;
-}
-.contact .contact_contact small {
-  color: lightgray;
-}
-.contact .contact_check .checkbox {
-  display: flex;
-  align-items: center;
-}
-.contact .contact_check .checkbox p {
-  margin: 0px;
-  display: flex;
-  align-items: center;
-}
-.contact .contact_bouton #bleu {
-  background-color: blue;
-}
-
-.connexion {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  border: 1px solid black;
-}
-.connexion .contact_title {
-  display: flex;
-  justify-content: space-between;
-}
-.connexion .contact_bouton {
-  display: flex;
-  justify-content: center;
-}
-.connexion .contact_bouton button {
-  margin: 1rem;
-  padding: 0.5rem;
-  background-color: #DD4545;
-  border: none;
-  border-radius: 10px;
-}
-.connexion .contact_bouton button a {
-  color: white;
-}
-.connexion .contact_contact {
-  line-height: 1rem;
-}
-.connexion .contact_contact p {
-  margin: 0.5rem;
-}
-.connexion .contact_contact small {
-  color: lightgray;
-}
-.connexion .contact_check .checkbox {
-  display: flex;
-  align-items: center;
-}
-.connexion .contact_check .checkbox p {
-  margin: 0px;
-  display: flex;
-  align-items: center;
-}
-.connexion .contact_bouton #bleu {
-  background-color: blue;
-}
-
-.hidden {
+.formulaire {
   display: none;
-  height: 1px;
-  overflow: hidden;
-  width: 1px;
+}
+.formulaire .inscription {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: 1px solid black;
+}
+.formulaire .inscription .contact_title {
+  display: flex;
+  justify-content: space-between;
+}
+.formulaire .inscription .contact_title .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.formulaire .inscription .contact_bouton {
+  display: flex;
+  justify-content: center;
+}
+.formulaire .inscription .contact_bouton button {
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: #DD4545;
+  border: none;
+  border-radius: 10px;
+}
+.formulaire .inscription .contact_bouton button a {
+  color: white;
+}
+.formulaire .inscription .formulaire1 {
+  display: none;
+}
+.formulaire .inscription .formulaire1 .contact_contact {
+  line-height: 1rem;
+}
+.formulaire .inscription .formulaire1 .contact_contact p {
+  margin: 0.5rem;
+}
+.formulaire .inscription .formulaire1 .contact_contact small {
+  color: lightgray;
+}
+.formulaire .inscription .formulaire2 {
+  display: none;
+}
+.formulaire .inscription .formulaire2 .contact_contact {
+  line-height: 1rem;
+}
+.formulaire .inscription .formulaire2 .contact_contact p {
+  margin: 0.5rem;
+}
+.formulaire .inscription .formulaire2 .contact_contact small {
+  color: lightgray;
+}
+.formulaire .inscription .contact_check .checkbox {
+  display: flex;
+  align-items: center;
+}
+.formulaire .inscription .contact_check .checkbox p {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+}
+.formulaire .inscription .contact_bouton #bleu {
+  background-color: blue;
+}
+
+.visible {
+  position: fixed;
+  top: 50px;
+  z-index: 5;
+  background-color: white;
 }
 
 .flou {
-  opacity: 0.1;
-}
-
-.relative {
-  position: relative;
-}
-
-.absolute {
-  position: fixed;
-  top: 5rem;
-  left: 25rem;
-  z-index: 10;
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=app.css.map */
