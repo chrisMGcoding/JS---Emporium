@@ -6574,7 +6574,8 @@ body {
     width: 30%;
   }
   .recentProduct .productDescription .productImagePrice .productImage {
-    padding: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
     position: relative;
   }
   .recentProduct .productDescription .productImagePrice .productImage .photoProduit {
@@ -6587,7 +6588,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    bottom: 0;
+    bottom: 0rem;
     left: 0;
     right: 0;
     background-color: transparent;
@@ -6657,8 +6658,7 @@ body {
   }
 
   .zoom {
-    transform: scale(1.5);
-    transition: 3s ease;
+    transform: scale(1.1);
     z-index: 1;
   }
 }
@@ -6910,15 +6910,15 @@ body {
   justify-content: center;
 }
 
-#sec {
+.allImage {
   width: 95%;
   margin: 10px auto;
   display: flex;
   justify-content: left;
-  overflow-x: auto;
+  overflow: visible;
 }
 
-#sec::-webkit-scrollbar {
+.allImage::-webkit-scrollbar {
   visibility: hidden;
 }
 
@@ -6934,7 +6934,7 @@ body {
   cursor: pointer;
 }
 
-#sec .div-image {
+.allImage .div-image {
   min-width: 260px;
   left: 0;
   text-align: center;
@@ -6966,6 +6966,26 @@ body {
 .spanCarousel {
   color: gray;
   text-decoration: line-through;
+}
+
+.boule1 {
+  transform: translate(0px);
+  transition: transform 2s ease-in-out;
+}
+
+.boule2 {
+  transform: translate(-320px);
+  transition: transform 2s ease-in-out;
+}
+
+.boule3 {
+  transform: translate(-640px);
+  transition: transform 2s ease-in-out;
+}
+
+.boule4 {
+  transform: translate(-960px);
+  transition: transform 2s ease-in-out;
 }
 
 @media (min-width: 1024px) {

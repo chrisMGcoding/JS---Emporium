@@ -80,31 +80,6 @@ closeBouton.addEventListener("click", () => {
     formulaire2.style.display = "none";
 })
 
-// window.addEventListener("click", () => {
-//     if (inscription.classList.contains("visible")) {
-//         inscription.classList.remove("visible");
-//         inscription.style.display = "none";
-//         tabSectionFlou.forEach(element => {
-//             element.classList.remove("flou");
-//         })
-//     } else {
-//         console.log("nope")
-//     }
-// })
-
-// if (inscription.classList.contains("visible")) {
-//     window.addEventListener("click", (e) => {
-//         inscription.classList.remove("visible");
-//         inscription.style.display = "none";
-//         tabSectionFlou.forEach(element => {
-//             element.classList.remove("flou");
-//         })
-//     })
-// }
-// else {
-//     console.log("nope")
-// }
-
 bouton_connexion.addEventListener("click", () => {
     formulaire1.style.display = "none";
     formulaire2.style.display = "flex";
@@ -213,51 +188,39 @@ window.addEventListener("scroll", (e) => {
 
 // mise en place carroussel
 
+let boule1 = Array.from(document.getElementsByClassName("boule"))[0];
+let boule2 = Array.from(document.getElementsByClassName("boule"))[1];
+let boule3 = Array.from(document.getElementsByClassName("boule"))[2];
+let boule4 = Array.from(document.getElementsByClassName("boule"))[3];
 
-  
+let allImage = Array.from(document.getElementsByClassName("allImage"))[0];
 
-// let slidePosition = 0;
-// let slides = document.getElementsByClassName("carroussel_items");
-// let totalSlides = slides.length;
+let carousselImage = Array.from(document.getElementsByClassName("div-image"));
 
-// document
-//     .getElementById("next")
-//     .addEventListener("click", function() {
-//         moveToNextSlide();
-//     })
+boule1.addEventListener("click", () => {
+    allImage.classList.add("boule1");
+    allImage.classList.remove("boule2");
+    allImage.classList.remove("boule3");
+    allImage.classList.remove("boule4");
+})
 
-// document
-//     .getElementById("previous")
-//     .addEventListener("click", function() {
-//         moveToPreviousSlide();
-//     })
+boule2.addEventListener("click", () => {
+    allImage.classList.add("boule2");
+    allImage.classList.remove("boule1");
+    allImage.classList.remove("boule3");
+    allImage.classList.remove("boule4");
+})
 
-// function updateSlidePosition() {
-//     for (let slide of slides) {
-//         slide.classList.remove("carroussel_items--visible");
-//         slide.classList.remove("carroussel_items--hidden");
-//     }
+boule3.addEventListener("click", () => {
+    allImage.classList.add("boule3");
+    allImage.classList.remove("boule1");
+    allImage.classList.remove("boule2");
+    allImage.classList.remove("boule4");
+})
 
-//     slides[slidePosition].classList.add("carroussel_items--visible");
-//     console.log(slides[slidePosition])
-// }
-
-// function moveToPreviousSlide() {
-//     if (slidePosition == 0) {
-//         slidePosition = 0;
-//     } else {
-//         slidePosition--;
-//     }
-
-//     updateSlidePosition();
-// }
-
-// function moveToNextSlide() {
-//     if (slidePosition == totalSlides -1) {
-//         slidePosition = 0;
-//     } else {
-//         slidePosition++;
-//     }
-
-//     updateSlidePosition();
-// }
+boule4.addEventListener("click", () => {
+    allImage.classList.add("boule4");
+    allImage.classList.remove("boule1");
+    allImage.classList.remove("boule2");
+    allImage.classList.remove("boule3");
+})
