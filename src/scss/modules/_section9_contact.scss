@@ -1,20 +1,26 @@
  .formulaire {
      display: none;
+    color: white;
     .inscription {
-        display: flex;
-        flex-direction: column;
         width: 50%;
         border: 1px solid black;
+        border-radius: 10px;
+        background-color: $connexion;
         .contact_title {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
+            margin-right: 5%;
+            padding-bottom: 0;
             .close {
                 color: #aaa;
-                float: right;
                 font-size: 28px;
                 font-weight: bold;
                 cursor: pointer;
             }
+        }
+        .contact_logo{
+            position: absolute;
+            margin: 1rem;
         }
         .contact_bouton {
             display : flex;
@@ -25,19 +31,30 @@
                 background-color: $bouton;
                 border: none;
                 border-radius: 10px;
+                cursor: pointer;
                 a {
                     color: white;
+                    text-decoration: none;
                 }
             }
         }
         .formulaire1 {
             display: none;
             .contact_contact {
-                line-height: 1rem;
-                p {
-                    margin: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                .contact_package {
+                    padding: 1rem;
                 }
-                small {
+                .contact_package>p {
+                    margin: 0%;
+                    
+                }
+                .contact_package>input {
+                    border: none;
+                    border-radius: 10px;
+                }
+                .contact_package>small {
                     color: lightgray;
                 }
             }
@@ -45,11 +62,20 @@
         .formulaire2 {
             display: none;
             .contact_contact {
-                line-height: 1rem;
-                p {
-                    margin: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                .contact_package {
+                    padding: 1rem;
                 }
-                small {
+                .contact_package>p {
+                    margin: 0%;
+                    
+                }
+                .contact_package>input {
+                    border: none;
+                    border-radius: 10px;
+                }
+                .contact_package>small {
                     color: lightgray;
                 }
             }
@@ -59,7 +85,7 @@
                 display: flex;
                 align-items: center;
                 p {
-                    margin: 0px;
+                    margin-top: 20px;
                     display: flex;
                     align-items: center;
                 }
@@ -67,7 +93,8 @@
         }
         .contact_bouton {
         #bleu {
-            background-color: blue;
+            background-color: $bouton;
+            color: white;
             }
         }
     }

@@ -6180,6 +6180,8 @@ body {
     color: white;
     background-color: #6C757D;
     cursor: pointer;
+    border-radius: 10px;
+    border: none;
   }
 
   .scroll {
@@ -6574,13 +6576,13 @@ body {
     width: 30%;
   }
   .recentProduct .productDescription .productImagePrice .productImage {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding: 1rem;
     position: relative;
   }
   .recentProduct .productDescription .productImagePrice .productImage .photoProduit {
+    display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
   }
   .recentProduct .productDescription .productImagePrice .productImage .overlay {
@@ -6588,19 +6590,19 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-right: 1rem;
     bottom: 0rem;
     left: 0;
     right: 0;
     background-color: transparent;
     overflow: hidden;
-    width: 90%;
+    width: auto;
     height: 0;
     transition: 3s ease;
+    text-align: center;
   }
   .recentProduct .productDescription .productImagePrice .productImage:hover .overlay {
     height: 31%;
-    padding-left: 13px;
-    padding-bottom: 2rem;
   }
   .recentProduct .productDescription .productImagePrice #texte1 {
     color: white;
@@ -7223,23 +7225,29 @@ footer > div {
 
 .formulaire {
   display: none;
+  color: white;
 }
 .formulaire .inscription {
-  display: flex;
-  flex-direction: column;
   width: 50%;
   border: 1px solid black;
+  border-radius: 10px;
+  background-color: #6C757D;
 }
 .formulaire .inscription .contact_title {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  margin-right: 5%;
+  padding-bottom: 0;
 }
 .formulaire .inscription .contact_title .close {
   color: #aaa;
-  float: right;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+}
+.formulaire .inscription .contact_logo {
+  position: absolute;
+  margin: 1rem;
 }
 .formulaire .inscription .contact_bouton {
   display: flex;
@@ -7251,32 +7259,50 @@ footer > div {
   background-color: #DD4545;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 .formulaire .inscription .contact_bouton button a {
   color: white;
+  text-decoration: none;
 }
 .formulaire .inscription .formulaire1 {
   display: none;
 }
 .formulaire .inscription .formulaire1 .contact_contact {
-  line-height: 1rem;
+  display: flex;
+  flex-direction: column;
 }
-.formulaire .inscription .formulaire1 .contact_contact p {
-  margin: 0.5rem;
+.formulaire .inscription .formulaire1 .contact_contact .contact_package {
+  padding: 1rem;
 }
-.formulaire .inscription .formulaire1 .contact_contact small {
+.formulaire .inscription .formulaire1 .contact_contact .contact_package > p {
+  margin: 0%;
+}
+.formulaire .inscription .formulaire1 .contact_contact .contact_package > input {
+  border: none;
+  border-radius: 10px;
+}
+.formulaire .inscription .formulaire1 .contact_contact .contact_package > small {
   color: lightgray;
 }
 .formulaire .inscription .formulaire2 {
   display: none;
 }
 .formulaire .inscription .formulaire2 .contact_contact {
-  line-height: 1rem;
+  display: flex;
+  flex-direction: column;
 }
-.formulaire .inscription .formulaire2 .contact_contact p {
-  margin: 0.5rem;
+.formulaire .inscription .formulaire2 .contact_contact .contact_package {
+  padding: 1rem;
 }
-.formulaire .inscription .formulaire2 .contact_contact small {
+.formulaire .inscription .formulaire2 .contact_contact .contact_package > p {
+  margin: 0%;
+}
+.formulaire .inscription .formulaire2 .contact_contact .contact_package > input {
+  border: none;
+  border-radius: 10px;
+}
+.formulaire .inscription .formulaire2 .contact_contact .contact_package > small {
   color: lightgray;
 }
 .formulaire .inscription .contact_check .checkbox {
@@ -7284,12 +7310,13 @@ footer > div {
   align-items: center;
 }
 .formulaire .inscription .contact_check .checkbox p {
-  margin: 0px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
 }
 .formulaire .inscription .contact_bouton #bleu {
-  background-color: blue;
+  background-color: #DD4545;
+  color: white;
 }
 
 .visible {
